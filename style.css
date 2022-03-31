@@ -20,7 +20,11 @@
   height: 20px;
 }
 
-main, #evaluation-form {
+main , #evaluation-form {
   display: flex;
   width: 675px;
+}
+
+#evaluation-form {
+  flex-direction: column;
 }
