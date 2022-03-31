@@ -47,3 +47,7 @@ main , #evaluation-form {
   width: 55%;
 }
 
+#label-rate {
+  display: flex;
+  justify-content: space-between;
+}
