@@ -30,3 +30,16 @@ function habilitaBotao() {
 }
 
 inputCheckbox.addEventListener('change', habilitaBotao);
+
+// // Faça com que, ao clicar no botão Enviar, o conteúdo dentro da tag <form> seja substituído pelas informações preenchidas pela pessoa usuária
+// Observações técnicas:
+// Todos os campos do formulário devem ser substituídos pelas informações da pessoa usuária.
+// Deve haver um campo com o formato "Nome: Alguem Aqui"
+// Deve haver um campo com o formato "Email: email@mail.com"
+// Deve haver um campo com o formato "Casa: Casa Escolhida"
+// Deve haver um campo com o formato "Família: Família Escolhida"
+// Deve haver um campo com o formato "Matérias: Matérias, Marcadas, Aqui"
+// Deve haver um campo com o formato "Avaliação: NotaAqui"
+// Deve haver um campo com o formato "Observações: Observações aqui"
+
+// btnSubmit.addEventListener('click', )

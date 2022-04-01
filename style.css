@@ -56,3 +56,7 @@ main , #evaluation-form {
   display: flex;
   justify-content: space-between;
 }
+
+.radio {
+  margin: 1.5px;
+}
