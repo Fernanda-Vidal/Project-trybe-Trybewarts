@@ -1,7 +1,3 @@
-// Ao preencher o formulário e clicar no botão, será validado que:
-// Caso o email seja "tryber@teste.com" e a senha seja "123456" será emitido um alerta contendo o texto "Olá, Tryber!"
-// Em todos os outro casos deverá ser emitido um alerta contendo o texto "Email ou senha inválidos."
-
 const buttonForm = document.querySelector('#button-form');
 
 buttonForm.addEventListener('click', () => {
@@ -14,4 +10,11 @@ buttonForm.addEventListener('click', () => {
   alert('Email ou senha inválidos.');
 });
 
+const contador = document.querySelector('#counter');
+const textarea = document.querySelector('#textarea');
+
+function contadorDeCaracter() {
+  contador.innerText = 500 - textarea.value.length;
+}
+textarea.addEventListener('keyup', contadorDeCaracter);
 
