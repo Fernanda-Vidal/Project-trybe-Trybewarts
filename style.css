@@ -32,4 +32,26 @@ main , #evaluation-form {
 #family-section {
   display: flex;
   flex-direction: column;
+
+#label-content {
+  display: flex;
+  padding: 2%;
+}
+
+#container-checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.input-checkbox {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+  width: 55%;
+}
+
+#label-rate {
+  display: flex;
+  justify-content: space-between;
 }
