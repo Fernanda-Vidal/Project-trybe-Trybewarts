@@ -28,3 +28,8 @@ main , #evaluation-form {
   flex-direction: column;
   width: 675px;
 }
+
+#family-section {
+  display: flex;
+  flex-direction: column;
+}
