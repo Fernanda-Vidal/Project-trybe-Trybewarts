@@ -13,3 +13,11 @@ buttonForm.addEventListener('click', () => {
   }
   alert('Email ou senha inválidos.');
 });
+
+const contador = document.querySelector('#counter');
+const textarea = document.querySelector('#textarea');
+
+function contadorDeCaracter() {
+  contador.innerText = 500 - textarea.value.length;
+}
+textarea.addEventListener('keyup', contadorDeCaracter);
