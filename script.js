@@ -14,7 +14,6 @@ buttonForm.addEventListener('click', () => {
   alert('Email ou senha inválidos.');
 });
 
-
 const contador = document.querySelector('#counter');
 const textarea = document.querySelector('#textarea');
 
@@ -23,12 +22,11 @@ function contadorDeCaracter() {
 }
 textarea.addEventListener('keyup', contadorDeCaracter);
 
-
 const btnSubmit = document.querySelector('#submit-btn');
 const inputCheckbox = document.querySelector('#agreement');
 
-function habilitaBotao(){
-btnSubmit.disabled = !inputCheckbox.checked;
+function habilitaBotao() {
+  btnSubmit.disabled = !inputCheckbox.checked;
 }
 
 inputCheckbox.addEventListener('change', habilitaBotao);
