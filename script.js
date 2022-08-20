@@ -26,16 +26,3 @@ function habilitaBotao() {
   btnSubmit.disabled = !inputCheckbox.checked;
 }
 inputCheckbox.addEventListener('change', habilitaBotao);
-
-
-
-let radioFamily = document.getElementsByTagName('input[name="family"]');
-function verificaChecked () {
-  for (let i = 0; i < radioFamily.length; i += 1) {
-    if (radioFamily[i] === 'checked') {
-      let checkedFamily = radioFamily[i].value;
-      console.log(checkedFamily);
-    }
-  }
-}
-verificaChecked();

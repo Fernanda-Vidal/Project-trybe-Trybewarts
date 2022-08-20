@@ -9,30 +9,35 @@
 </head>
 <body>
 <header class="header">
-  <img class="trybewarts-header-logo" src="/images/trybewarts-header-logo.svg" alt="Logotipo Trybewarts">
-  <h1 id="trybewarts-header-title">Trybewarts</h1>
+  <div class="img-header">
+    <img class="trybewarts-header-logo" src="/images/trybewarts-header-logo.svg" alt="Logotipo Trybewarts">
+  </div>
+  <div class="h1-header" >
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+  </div>
   <form class="trybewarts-login" action="">
-    <input id="email" type="email" name="email" placeholder="Email">
-    <input id="senha" type="password" name="password" placeholder="Senha">
+    <input class="input-login" id="email" type="email" name="email" placeholder="Email">
+    <input class="input-login" id="senha" type="password" name="password" placeholder="Senha">
     <button id="button-form">Entrar</button>
   </form>
 </header>
 <main>
 
-  <form action="" id="evaluation-form">
-
+  <form class="form" action="" id="evaluation-form">
+    <h2>Formulário de Avaliação</h2>
     <section id="input-form">
-      <input id="input-name" type="text" placeholder="Nome">
-      <input id="input-lastname" type="text" placeholder="Sobrenome">
+      <input class="input" id="input-name" type="text" placeholder="Nome" />
+      <input class="input" id="input-lastname" type="text" placeholder="Sobrenome" />
     </section>
 
     <section id="input-house" >
-      <input id="input-email" type="email" placeholder="Email">
-      <label for="">Casa<select name="" id="house">
-        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-        <option value="Corvinode" id="corvinode-house">Corvinode</option>
-        <option value="Pytherina" id="pytherina-house">Pytherina</option>
+      <input class="input" id="input-email" type="email" placeholder="Email">
+      <label class="label" for=""> Casa:
+        <select class="input-select" name="house" id="house">
+        <option class="option" value="Gitnória" id="gitnoria-house">Gitnória</option>
+        <option class="option" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+        <option class="option" value="Corvinode" id="corvinode-house">Corvinode</option>
+        <option class="option" value="Pytherina" id="pytherina-house">Pytherina</option>
       </select>
     </label>
     </section>
@@ -40,32 +45,32 @@
     <hr class="hr">
 <div id="agrupa">
     <section id="family-section">
-      <label id="label-family">Qual sua família?</label>
-      <label for="family-front">
-        <input type="radio" name="family" value="Frontend" id="family-front" class="family">Frontend
-      </label>
-      <label for="family-back">
-        <input type="radio" name="family" value="Backend" id="family-back" class="family">Backend
-      </label>
-      <label for="family-full">
-        <input type="radio" name="family" value="FullStack" id="family-full" class="family">FullStack
-      </label>
+        <label id="label-family">Qual sua família?</label>
+        <label for="family-front">
+          <input type="radio" name="family" value="Frontend" id="family-front" class="family">Frontend
+        </label>
+        <label for="family-back">
+          <input type="radio" name="family" value="Backend" id="family-back" class="family">Backend
+        </label>
+        <label for="family-full">
+          <input type="radio" name="family" value="FullStack" id="family-full" class="family">FullStack
+        </label>
     </section>
     
-  </section>
+  <!-- </section> -->
   <section id="container-checkbox">
     <label id="label-content" for="">
       Qual conteúdo você está com mais vontade de aprender?
     </label>
     <div class="input-checkbox">
-      <label for="hofs"><input type="checkbox" name="materia" id="hofs" value="HoFs">Hofs</label>
-      <label for="jest"><input type="checkbox" name="materia" id="jest" value="Jest">Jest</label>
-      <label for="promises"><input type="checkbox" name="materia" id="promises" value="Promises">Promises</label>
+      <label for="hofs"><input class="checkbox-conteudo" type="checkbox" name="materia" id="hofs" value="HoFs">Hofs</label>
+      <label for="jest"><input class="checkbox-conteudo" type="checkbox" name="materia" id="jest" value="Jest">Jest</label>
+      <label for="promises"><input class="checkbox-conteudo" type="checkbox" name="materia" id="promises" value="Promises">Promises</label>
     </div>
     <div class="input-checkbox">
-      <label for="react"><input type="checkbox" name="materia" id="react" value="React">React</label>
-      <label for="sql"><input type="checkbox" name="materia" id="sql" value="SQL">SQL</label>
-      <label for="phyton"><input type="checkbox" name="materia" id="phyton" value="Python">Python</label>
+      <label for="react"><input class="checkbox-conteudo" type="checkbox" name="materia" id="react" value="React">React</label>
+      <label for="sql"><input class="checkbox-conteudo" type="checkbox" name="materia" id="sql" value="SQL">SQL</label>
+      <label for="phyton"><input class="checkbox-conteudo" type="checkbox" name="materia" id="phyton" value="Python">Python</label>
     </div>
   </section>
 </div>
@@ -85,10 +90,10 @@
   <label for="10"><input type="radio" name="rate" value="10" id="10" class="radio">10</label>
 </label>
 </section>
-<section>
-  <label class="textarea" for="textarea">Deixe seu comentário:
-    <p id="counter">500</p>
-  <textarea name="" id="textarea" cols="30" rows="10" maxlength="500" ></textarea>
+<section class="textarea">
+  <label for="textarea">Deixe seu comentário:
+    <!-- <p id="counter">500</p> -->
+  <textarea class="input-textarea" name="" id="textarea" cols="30" rows="10" maxlength="500" placeholder="500" ></textarea>
 </label>
 
 </section>
@@ -98,11 +103,13 @@
         <input type="checkbox" name="" id="agreement" required>
     </section>
     <section>
-      <button type="submit" id="submit-btn" disabled>Enviar</button>
+      <button type="button" id="submit-btn" disabled>Enviar</button>
     </section>
 
   </form>
-  <img id="trybewarts-forms-logo" src="/images/trybewarts-colored.svg" alt="" height="500px">
+  <div class="img-trybewarts" >
+    <img id="trybewarts-forms-logo" src="/images/trybewarts-colored.svg" alt="" height="500px">
+  </div>
 </main>
 
   <footer>Direitos reservados à Trybewarts©</footer>
