@@ -1,9 +1,13 @@
 # Projeto Trybewarts Wizarding School! :mage:
 
+Quinto projeto realizado no Módulo de Fundamentos do curso de Desenvolvimento Web da Trybe em parceria com a Ingris Andrade.
+
+Toda a estrutura do projeto foi fornecida pela Trybe.
+
+Requisitos realizados nos arquivos index.html, style.css e script.js
 
 
-
-## Lista de requisitos obrigatórios:
+## Lista de requisitos obrigatórios💡:
 
 1. Crie uma barra verde na parte superior da página
 
